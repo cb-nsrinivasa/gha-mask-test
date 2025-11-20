@@ -15,12 +15,12 @@ jobs:
         run: |
           echo "hw"
           echo "::add-mask::my-secret-value"
-          for i in {1..5000}; do
+          for i in {1..500000}; do
             echo "::add-mask::my-secret-value$i"
           done
           echo "my-secret-value399"
           echo "my-secret-value599"
-          echo "my-secret-value499"
+          echo "my-secret-value49908"
 
       - name: mask-size-test
         run: |
