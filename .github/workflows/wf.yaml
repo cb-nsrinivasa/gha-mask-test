@@ -24,3 +24,4 @@ jobs:
           echo "hw"
           long=$(printf 'A%.0s' {1..500})
           echo "$long"
+          echo ${#long}
