@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "hw"
           echo "::add-mask::my-secret-value"
-          for i in {1..5000}; do
+          for i in {1..50000}; do
             echo "::add-mask::my-secret-value$i"
           done
           echo "my-secret-value399"
@@ -28,4 +28,4 @@ jobs:
           long=$(printf 'A%.0s' {1..500000})
           echo ${#long}
           echo "::add-mask::$long"
-          echo ${long}
+          # echo ${long}
