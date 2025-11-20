@@ -11,3 +11,4 @@ jobs:
       - name: mask-test
         run: |
           echo "hw"
+          echo "::add-mask::my-secret-value"
