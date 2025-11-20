@@ -1,0 +1,13 @@
+name: mask-test
+
+on:
+  workflow_dispatch:  # run manually
+
+jobs:
+  mask-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: mask-test
+        run: |
+          echo "hw"
