@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: mask-test
+      - name: mask-operations-count
         run: |
           echo "hw"
           echo "::add-mask::my-secret-value"
@@ -19,3 +19,8 @@ jobs:
           echo "my-secret-value599"
           echo "my-secret-value499"
 
+      - name: mask-size-test
+        run: |
+          echo "hw"
+          long=$(printf 'A%.0s' {1..500})
+          echo "$long"
