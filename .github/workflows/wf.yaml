@@ -2,6 +2,9 @@ name: mask-test
 
 on:
   workflow_dispatch:  # run manually
+  push:
+    branches:
+    - "**"
 
 jobs:
   mask-job:
