@@ -16,4 +16,6 @@ jobs:
             echo "::add-mask::my-secret-value$i"
           done
           echo "my-secret-value399"
+          echo "my-secret-value599"
+          echo "my-secret-value499"
 
