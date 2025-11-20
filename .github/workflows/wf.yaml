@@ -25,7 +25,7 @@ jobs:
       - name: mask-size-test
         run: |
           echo "hw"
-          long=$(printf 'A%.0s' {1..50000})
+          long=$(printf 'A%.0s' {1..500000})
           echo ${#long}
           echo "::add-mask::$long"
           echo ${long}
