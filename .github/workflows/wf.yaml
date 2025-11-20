@@ -12,7 +12,7 @@ jobs:
         run: |
           echo "hw"
           echo "::add-mask::my-secret-value"
-          for i in {1..500}; do
+          for i in {1..5000}; do
             echo "::add-mask::my-secret-value$i"
           done
           echo "my-secret-value399"
