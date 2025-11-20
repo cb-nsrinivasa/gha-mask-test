@@ -12,3 +12,8 @@ jobs:
         run: |
           echo "hw"
           echo "::add-mask::my-secret-value"
+          for i in {1..5}; do
+            echo "my-secret-value$i"
+          done
+
+
